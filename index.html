@@ -13,10 +13,16 @@
 <body>
   <div class="container">
     <div class="calc">
+      <i class="material-symbols-outlined">calculate</i>
       <h1>Calculadora</h1>
-      <input type="number" name="" id="num1">
-      <input type="number" name="" id="num2">
-      <button onclick="calc()">Somar</button>
+      <input type="number" name="" id="num1" placeholder="Digite um número">
+      <input type="number" name="" id="num2" placeholder="Digite um número">
+      <div class="botoes">
+        <button onclick="soma('+')">+</button>
+        <button onclick="soma('-')">-</button>
+        <button onclick="soma('*')">*</button>
+        <button onclick="soma('/')">/</button>
+      </div>
       <input type="text" name="" id="output" readonly>
     </div>
     <div class="history">
