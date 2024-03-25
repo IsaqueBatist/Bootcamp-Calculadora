@@ -12,17 +12,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 600px;
+  width: 800px;
   background-color: #d3d3d3;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   padding: 40px;
   border-radius: 4px;
 }
 
 .calc {
-  width: 300px;
+  width: 44%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,37 @@ body {
   flex-direction: row;
 }
 
+.history {
+  padding: 30px;
+  width: 50%;
+
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.529);
+  text-align: right;
+}
+
+.title-history {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin: 0;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.title-calc {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin: 0;
+  font-weight: bolder;
+}
+
+#history div {
+  margin-bottom: 20px;
+}
+
 input {
   width: 280px;
   height: 22px;
@@ -45,6 +76,7 @@ input {
   font-size: 1.2em;
   margin: 14px 70px;
   border-radius: 5px;
+  text-align: right;
 }
 
 input[type=number]:focus {

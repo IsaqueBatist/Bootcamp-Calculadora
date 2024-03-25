@@ -11,4 +11,13 @@ function soma(op) {
   }
 
   document.getElementById("output").value = valor;
+
+  var newHistory = "<div>" + num1 + " " + op + " " + num2 + " " + "=" + " " + valor + "</div>";
+  var history = document.getElementById("history");
+
+  history.innerHTML = newHistory + history.innerHTML
+
+  if (history.children.length > 10) {
+    history.removeChild(history.childNodes[10])
+  }
 }
